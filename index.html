@@ -28,6 +28,15 @@
     <!-- Custom CSS-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/plugins/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/css/owl.theme.default.min.css">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 
 
 
@@ -115,7 +124,7 @@
                             <ul>
                                 <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i
                                         class="fa fa-envelope"></i><a
-                                        href="mailto:brunoliveiraq@gmail.com">bjtech@gmail.com</a></li>
+                                        href="mailto:brunoliveiraq@gmail.com">ti.bjtech@gmail.com</a></li>
                                 <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i
                                         class="fa fa-whatsapp"></i><a href="https://wa.me/119471669370">+55 11
                                         94716-9370</a></li>
@@ -184,7 +193,7 @@
 
     <!--
         ===================
-           SOBRE ATIVIDADES
+           COMO PODEMOS TE AJUDAR
         ===================
         -->
     <section class="mh-service">
@@ -327,6 +336,17 @@
         </div>
     </section>
 
+  <!--
+        ===================
+           FEEDBACKS
+        ===================
+        -->
+        <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+            <h3>O QUE DIZEM NOSSOS CLIENTES {EM CONSTRUÇÃO}</h3>
+        </div>
+        
+        
+
 
     <!--
         ===================
@@ -344,12 +364,13 @@
                         <div class="row">
                             <div class="col-sm-12 col-md-6 mh-footer-address">
                                 <div class="col-sm-12 xs-no-padding">
-                                    <div class="mh-address-footer-item dark-bg shadow-1 media wow fadeInUp"
+                                   <!-- <div class="mh-address-footer-item dark-bg shadow-1 media wow fadeInUp"
                                         data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                        
                                         <div class="each-icon">
                                             <i class="fa fa-users"></i>
                                         </div>
-                                        <div class="each-info media-body">
+                                         <div class="each-info media-body">
                                             <h4>Redes Sociais</h4>
                                             <div>
                                                 <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s"
@@ -360,6 +381,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                -->
                                 </div>
                                 <div class="col-sm-12 xs-no-padding ">
                                     <div class="mh-address-footer-item media dark-bg shadow-1 wow fadeInUp"
@@ -369,7 +391,7 @@
                                         </div>
                                         <div class="each-info media-body">
                                             <h4>E-mail</h4>
-                                            <a href="mailto:brunoliveiraq@gmail.com">bjtech@gmail.com</a>
+                                            <a href="mailto:brunoliveiraq@gmail.com">ti.bjtech@gmail.com</a>
                                         </div>
                                     </div>
                                 </div>
@@ -421,15 +443,55 @@
                                 </form>
                             </div>
                             <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s"
-                                data-wow-delay="0.2s">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="text-left text-xs-center">
-                                            <p> &copy; BJ tech. Todos os direitos reservados - 2024</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            data-wow-delay="0.2s">
+                           <div class="row">
+                               <div class="col-sm-6">
+                                   <div class="text-left text-xs-center">
+                                       <p> &copy; BJ tech. Todos os direitos reservados - 2024</p>
+                                   </div>
+                               </div>
+                               <div>
+                                   <button id="verMedidasBtn">Ver Medidas</button>
+                                   <div id="imagemContainer" class="hidden">
+                                       <img src="assets/images/Guia de medidas AF1.jpeg" alt="" class="img-fluid">
+                                   </div>
+                               </div>
+                               <script>
+                                   document.getElementById('verMedidasBtn').addEventListener('click', function() {
+                                       var imgContainer = document.getElementById('imagemContainer');
+                                       if (imgContainer.classList.contains('hidden')) {
+                                           imgContainer.classList.remove('hidden');
+                                       } else {
+                                           imgContainer.classList.add('hidden');
+                                       }
+                                   });
+                               
+                               <!-- Owl Carousel JS -->
+                                src="assets/plugins/js/owl.carousel.min.js"></script>
+                                <script>
+                                    $(document).ready(function() {
+                                        $('.owl-carousel').owlCarousel({
+                                            loop: true,
+                                            margin: 10,
+                                            nav: true,
+                                            responsive: {
+                                                0: {
+                                                    items: 1
+                                                },
+                                                600: {
+                                                    items: 1
+                                                },
+                                                1000: {
+                                                    items: 3
+                                                }
+                                            }
+                                        });
+                                    });
+                                </script>
+
+                           </div>
+                       </div>
+                       
                         </div>
                     </div>
                 </div>

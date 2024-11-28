@@ -3540,4 +3540,35 @@ BLOG Pagination
   height: 100%;
 }
 
+#verMedidasBtn {
+  background-color: #3EB09A;
+  color: white;
+  border: none;
+  border-radius: 50%; /* Torna o botão redondo */
+  width: 80px; /* Ajuste o tamanho conforme necessário */
+  height: 80px; /* Ajuste o tamanho conforme necessário */
+  text-align: center;
+  cursor: pointer;
+  animation: pulse 0.5s infinite;
+}
+
+#verMedidasBtn:hover {
+  background-color: #349c85; /* Cor mais escura para o hover */
+}
+/* Animação de pulsar */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      background-color: #3EB09A;
+  }
+  50% {
+      transform: scale(1.1);
+      background-color: #45d4b6; /* Cor mais viva no meio da animação */
+  }
+  100% {
+      transform: scale(1);
+      background-color: #3EB09A;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
